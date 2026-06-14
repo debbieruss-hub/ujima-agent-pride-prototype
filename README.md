@@ -26,7 +26,3 @@ ujima-agent-pride-prototype/
 ├── agent_pride.py          # Native Python prototype (recommended)
 ├── agent_pride_crew.py     # CrewAI attempt (needs old dependencies, included for completeness)
 └── README.md
-
-
-Technical note on CrewAI
-The capstone option "CrewAI agent team running locally" was the target, but CrewAI 0.11.2 pins dependencies (langchain<0.2.0, instructor<0.6.0, numpy<2) that are incompatible with Python 3.14 and unavailable as pre-built wheels for Windows. To ensure the evaluator can run the prototype instantly with zero dependency friction, the exact same RANK/HUNT/GUARD/PRIDE architecture is implemented in native Python. Every constraint, handoff, and safety check is identical to what a CrewAI orchestration would perform.
